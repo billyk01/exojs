@@ -64,5 +64,38 @@ alert(`${clubEntry}`+ ' '+ `${age} years old!`);
    alert(`${rand}` +"° is that is Warm");
    }else{ alert("none")
    }
+   
+   /**
+* Exercice 3
+*/
+  var date = new Date();
+  var day = date.getDay();
+ 
+  switch (day) {
+	case 1:
+		alert("it's Monday");
+	case 2:
+		alert("it's Tuesday");
+	break;
+    case 3:
+		alert("it's Wednesday");
+	break;
+	case 4:
+		alert("it's Thursday");
+	break;
+	case 5:
+		alert("it's Friday");
+	break;
+	case 6:
+		alert("it's Saturday");
+	break;
+	case 1:
+		alert("it's Sunday");
+	break;	
+
+	default:
+		alert("None");
+}
+
 
 
