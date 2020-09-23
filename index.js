@@ -50,5 +50,19 @@ alert(`${clubEntry}`+ ' '+ `${age} years old!`);
 }
 
 
+/**
+*  Exercice 2
+*/
+
+
+   var rand = Math.floor((Math.random() * 30) + 1);
+  
+  if(rand>=0&&rand<=10){alert(`${rand}` +"° is that is Cool");
+  }else if(rand>=11&&rand<=19){
+    alert(`${rand}` +"° is that is Tepid");
+   }else if(rand>=20&&rand<=30){
+   alert(`${rand}` +"° is that is Warm");
+   }else{ alert("none")
+   }
 
 
