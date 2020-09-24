@@ -13,7 +13,7 @@
 var string = '42';
 var number = 42
 var float = 42.0;
-var boolean = true; 
+var boolean = true;
 var array = [42];
 var date = new Date[4241, 12, 24,42,42] ;
 var objet = {'42' : 42};
@@ -56,7 +56,7 @@ alert(`${clubEntry}`+ ' '+ `${age} years old!`);
 
 
    var rand = Math.floor((Math.random() * 30) + 1);
-  
+
   if(rand>=0&&rand<=10){alert(`${rand}` +"° is that is Cool");
   }else if(rand>=11&&rand<=19){
     alert(`${rand}` +"° is that is Tepid");
@@ -64,13 +64,13 @@ alert(`${clubEntry}`+ ' '+ `${age} years old!`);
    alert(`${rand}` +"° is that is Warm");
    }else{ alert("none")
    }
-   
+
    /**
 * Exercice 3
 */
   var date = new Date();
   var day = date.getDay();
- 
+
   switch (day) {
 	case 1:
 		alert("it's Monday");
@@ -91,11 +91,44 @@ alert(`${clubEntry}`+ ' '+ `${age} years old!`);
 	break;
 	case 1:
 		alert("it's Sunday");
-	break;	
+	break;
 
 	default:
 		alert("None");
 }
 
+/**
+* Les conditons
+*/
+
+/**
+* Exercices 1
+*/
+
+var tab = [1,2,3,5,8];
+
+tab.forEach(myFunction);
+
+function myFunction(value, index, array) {
+  for(i=0;i<=10;i++){
+  	var result = i*value;
+  	console.log(result);
+  }
+}
+
+/**
+* Exercices 2
+*/
 
 
+*/
+var tab = [1,2,3,5,8];
+
+tab.forEach(myFunction('','4',''));
+
+function myFunction(value, index, array) {
+  for(i=0;i<=10;i++){
+  	var result = i*value;
+  	result.toString;
+  }
+}
