@@ -98,37 +98,37 @@ alert(`${clubEntry}`+ ' '+ `${age} years old!`);
 }
 
 /**
-* Les conditons
+* Corrections
 */
 
-/**
-* Exercices 1
-*/
-
-var tab = [1,2,3,5,8];
-
-tab.forEach(myFunction);
-
-function myFunction(value, index, array) {
-  for(i=0;i<=10;i++){
-  	var result = i*value;
-  	console.log(result);
-  }
+// Exercice 1
+var ar = [1, 2, 3, 5, 8];
+for(var key in ar){
+   for(var i = 0; i <= 10; i++) {
+     var result = ar[key] * i
+     console.log(i + " x " + ar[key] + " = " + result);
+    }
 }
 
+/* Exercice 2 */
+
+    var multiplyList = document.createElement('ul');
+    for(var i = 1; i <= 10; i++){
+        var listElement = document.createElement('li');
+        listElement.textContent = 5 + " x " + i + " = " + 5 * i;
+        multiplyList.appendChild(listElement);
+        document.querySelector('body').appendChild(multiplyList);
+    }
+
 /**
-* Exercices 2
+* Exercice 3
+*/
+
+/** Le moyen d'arreter la boucle infinie c'est de le
+* kill en retroivant son PID dans le terminal
 */
 
 
+/**
+*  Exercice 4
 */
-var tab = [1,2,3,5,8];
-
-tab.forEach(myFunction('','4',''));
-
-function myFunction(value, index, array) {
-  for(i=0;i<=10;i++){
-  	var result = i*value;
-  	result.toString;
-  }
-}
